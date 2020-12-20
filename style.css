@@ -10,7 +10,7 @@ body
 	position : relative;
 	left : 200px;
 	top : -10px;
-	height : 8300px;
+	height : 9900px;
 	width : 1100px;
 }
 
@@ -207,4 +207,12 @@ body
 a { 
 	color: white; 
 	font-size: 1.5em;
+}
+
+.soustitre
+{
+	font-size : 1em;
+	text-align : center;
+	position : relative;
+	top : 80px;
 }
