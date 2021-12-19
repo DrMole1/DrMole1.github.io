@@ -1,7 +1,14 @@
+@font-face 
+{ 
+	font-family: Galgony; 
+	src: url('Galgony.ttf'); 
+}  
+
 body
 {
 	background-color : #6d071a;
 	color : white;
+	font-family: Galgony;
 }
 
 #background_centre
@@ -10,7 +17,7 @@ body
 	position : relative;
 	left : 200px;
 	top : -10px;
-	height : 11500px;
+	height : 12000px;
 	width : 1100px;
 }
 
@@ -30,16 +37,25 @@ body
 .maphoto
 {
 	position : relative;
-	top : 50px;
+	top : 30px;
 	left : 200px;
 }
 
 .titre_pres
 {
 	font-size : 1.8em;
+	padding-right : 100px; 
+	position : relative;
+	top : 90px;
+	display : flex;
+	justify-content : center;
+}
+
+.titre_pres2
+{
+	font-size : 1.8em;
 	padding-right : 50px; 
 	position : relative;
-	top : 50px;
 	display : flex;
 	justify-content : center;
 }
@@ -52,7 +68,7 @@ body
 	position : relative;
 	left : 200px;
 	top : 50px;
-	height : 150px;
+	height : 350px;
 	width : 650px;
 	font-size : 1.3em;
 	padding : 15px;
@@ -69,6 +85,14 @@ body
 	justify-content : space-around;
 	position : relative;
 	top : 100px;
+}
+
+.colonne_proj
+{
+	display : flex;
+	justify-content : space-around;
+	position : relative;
+	margin-top : 50px;
 }
 
 #btn_mini_haut1
@@ -103,6 +127,38 @@ body
 	left : 1000px;
 }
 
+#bordure2_hautgauche
+{
+	display : flex;
+	position : absolute;
+	top : 17px;
+	left : 20px;
+}
+
+#bordure2_hautdroite
+{
+	display : flex;
+	position : absolute;
+	top : 17px;
+	left : 1000px;
+}
+
+#bordure2_basgauche
+{
+	display : flex;
+	position : absolute;
+	top : 330px;
+	left : 20px;
+}
+
+#bordure2_basdroite
+{
+	display : flex;
+	position : absolute;
+	top : 325px;
+	left : 1005px;
+}
+
 #flag1
 {
 	display : flex;
@@ -119,9 +175,57 @@ body
 	left : 930px;
 }
 
+#flag3
+{
+	display : flex;
+	position : absolute;
+	top : 1180px;
+	left : 220px;
+}
+
+#flag4
+{
+	display : flex;
+	position : absolute;
+	top : 1180px;
+	left : 750px;
+}
+
+#flag5
+{
+	display : flex;
+	position : absolute;
+	top : 4200px;
+	left : 220px;
+}
+
+#flag6
+{
+	display : flex;
+	position : absolute;
+	top : 4200px;
+	left : 750px;
+}
+
+#flag7
+{
+	display : flex;
+	position : absolute;
+	top : 11450px;
+	left : 300px;
+}
+
+#flag8
+{
+	display : flex;
+	position : absolute;
+	top : 11450px;
+	left : 670px;
+}
+
 .font_spe
 {
-	font-size : 0.95em; 
+	font-size : 1em; 
 }
 
 .box_gauche
@@ -131,7 +235,6 @@ body
 	border-width : 10px; 
 	position : relative;
 	left : 50px;
-	top : 100px;
 	height : 300px;
 	width : 650px;
 	font-size : 1em;
@@ -145,8 +248,6 @@ body
 	border-color : #6d071a;
 	border-width : 10px; 
 	position : relative;
-	left : 350px;
-	top : 100px;
 	height : 300px;
 	width : 650px;
 	font-size : 1em;
@@ -178,7 +279,7 @@ body
 {
 	position : relative;
 	left : 850px;
-	bottom : 150px;
+	bottom : 300px;
 }
 
 .titre
@@ -204,6 +305,24 @@ body
 	color : white;
 }
 
+#fixed2
+{
+	position : fixed;
+	text-align : center;
+	color : white;
+	left : 20px;
+	top : 550px;
+}
+
+#fixed3
+{
+	position : fixed;
+	text-align : center;
+	color : white;
+	top : 450px;
+	left : 1320px;
+}
+
 a { 
 	color: white; 
 	font-size: 1.5em;
@@ -215,4 +334,29 @@ a {
 	text-align : center;
 	position : relative;
 	top : 80px;
+}
+
+#experience_pro
+{
+	position : relative;
+	left : 50px;
+}
+
+.titre_pro
+{
+	font-size: 1.2em;
+}
+
+#fixedbordure_gauche
+{
+	position : fixed;
+	top: -10px;
+	left : 100px;
+}
+
+#fixedbordure_droite
+{
+	position : fixed;
+	top: -10px;
+	right : 100px;
 }
