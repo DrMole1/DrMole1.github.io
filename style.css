@@ -324,6 +324,15 @@ body
 	left : 1320px;
 }
 
+#fixed4
+{
+	position : fixed;
+	text-align : center;
+	color : white;
+	top:40px;
+	left : 1400px;
+}
+
 a { 
 	color: white; 
 	font-size: 1.5em;
