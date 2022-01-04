@@ -311,8 +311,8 @@ body
 	position : fixed;
 	text-align : center;
 	color : white;
-	left : 20px;
-	top : 550px;
+	left : 10px;
+	top : 500px;
 }
 
 #fixed3
@@ -320,8 +320,8 @@ body
 	position : fixed;
 	text-align : center;
 	color : white;
-	top : 450px;
-	left : 1320px;
+	top : 480px;
+	left : 1360px;
 }
 
 #fixed4
