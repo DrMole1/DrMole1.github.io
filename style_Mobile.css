@@ -1,0 +1,356 @@
+@media (max-width: 649px) {
+
+#background_centre
+{
+	background-color : black;
+	position : relative;
+	left : 200px;
+	top : -10px;
+	height : 13500px;
+	width : 920px;
+}
+
+#cadre_pres
+{
+	column-count : 2;
+	border : solid;
+	border-color : #6d071a;
+	border-width : 10px; 
+	position : relative;
+	left : 50px;
+	top : 50px;
+	height : 300px;
+	width : 975px;
+}
+
+.maphoto
+{
+	position : relative;
+	top : 30px;
+	left : 200px;
+}
+
+.titre_pres
+{
+	font-size : 1.3em;
+	padding-right : 100px; 
+	position : relative;
+	top : 90px;
+	display : flex;
+	justify-content : center;
+}
+
+.titre_pres2
+{
+	font-size : 1.3em;
+	padding-right : 50px; 
+	position : relative;
+	display : flex;
+	justify-content : center;
+}
+
+#cadre_pres2
+{
+	border : solid;
+	border-color : #6d071a;
+	border-width : 10px; 
+	position : relative;
+	left : 200px;
+	top : 50px;
+	height : 370px;
+	width : 650px;
+	font-size : 1.3em;
+	padding : 15px;
+}
+
+.colonne
+{
+	display : flex;
+	justify-content : space-around;
+	position : relative;
+	top : 100px;
+}
+
+.widthPro
+{
+	width:400px;
+}
+
+.colonne_proj
+{
+	display : flex;
+	justify-content : space-around;
+	position : relative;
+	margin-top : 50px;
+}
+
+#btn_mini_haut1
+{
+	display : flex;
+	position : absolute;
+	top : 80px;
+	left : 20px;
+}
+
+#btn_mini_haut2
+{
+	display : flex;
+	position : absolute;
+	top : 250px;
+	left : 20px;
+}
+
+#btn_mini_haut3
+{
+	display : flex;
+	position : absolute;
+	top : 80px;
+	left : 1000px;
+}
+
+#btn_mini_haut4
+{
+	display : flex;
+	position : absolute;
+	top : 250px;
+	left : 1000px;
+}
+
+#bordure2_hautgauche
+{
+	display : flex;
+	position : absolute;
+	top : 17px;
+	left : 20px;
+}
+
+#bordure2_hautdroite
+{
+	display : flex;
+	position : absolute;
+	top : 17px;
+	left : 1000px;
+}
+
+#bordure2_basgauche
+{
+	display : flex;
+	position : absolute;
+	top : 330px;
+	left : 20px;
+}
+
+#bordure2_basdroite
+{
+	display : flex;
+	position : absolute;
+	top : 325px;
+	left : 1005px;
+}
+
+#flag1
+{
+	display : flex;
+	position : absolute;
+	top : 475px;
+	left : 50px;
+}
+
+#flag2
+{
+	display : flex;
+	position : absolute;
+	top : 475px;
+	left : 930px;
+}
+
+#flag3
+{
+	display : flex;
+	position : absolute;
+	top : 1220px;
+	left : 220px;
+}
+
+#flag4
+{
+	display : flex;
+	position : absolute;
+	top : 1220px;
+	left : 750px;
+}
+
+#flag5
+{
+	display : flex;
+	position : absolute;
+	top : 4300px;
+	left : 220px;
+}
+
+#flag6
+{
+	display : flex;
+	position : absolute;
+	top : 4300px;
+	left : 750px;
+}
+
+#flag7
+{
+	display : flex;
+	position : absolute;
+	top : 11550px;
+	left : 300px;
+}
+
+#flag8
+{
+	display : flex;
+	position : absolute;
+	top : 11550px;
+	left : 670px;
+}
+
+.font_spe
+{
+	font-size : 1em; 
+}
+
+.box_gauche
+{
+	border : solid;
+	border-color : #6d071a;
+	border-width : 10px; 
+	position : relative;
+	left : 50px;
+	height : 300px;
+	width : 650px;
+	font-size : 1em;
+	padding : 15px;
+	text-align : center;
+}
+
+.box_droite
+{
+	border : solid;
+	border-color : #6d071a;
+	border-width : 10px; 
+	position : relative;
+	height : 300px;
+	width : 650px;
+	font-size : 1em;
+	padding : 15px;
+	text-align : center;
+}
+
+
+.titre_box
+{
+	font-size : 2em;
+	margin-top : 10px;
+}
+
+.colonne_images
+{
+	width: 32%;
+  	margin: 10px 0.666%;
+}
+
+.deco_gauche
+{
+	position : relative;
+	left : 100px;
+	bottom : 150px;
+}
+
+.deco_droite
+{
+	position : relative;
+	left : 850px;
+	bottom : 300px;
+}
+
+.titre
+{
+	font-size : 2em;
+	text-align : center;
+	position : relative;
+	top : 80px;
+}
+
+#center
+{
+	position : relative;
+	text-align : center;
+	align-items : center;
+	top : 100px;
+}
+
+#fixed
+{
+	position : fixed;
+	text-align : center;
+	color : white;
+}
+
+#fixed2
+{
+	position : fixed;
+	text-align : center;
+	color : white;
+	left : 10px;
+	top : 500px;
+}
+
+#fixed3
+{
+	position : fixed;
+	text-align : center;
+	color : white;
+	top : 480px;
+	left : 1360px;
+}
+
+#fixed4
+{
+	position : fixed;
+	text-align : center;
+	color : white;
+	top:40px;
+	left : 1400px;
+}
+
+.soustitre
+{
+	font-size : 1em;
+	text-align : center;
+	position : relative;
+	top : 80px;
+}
+
+#experience_pro
+{
+	position : relative;
+	left : 50px;
+}
+
+.titre_pro
+{
+	font-size: 1.2em;
+}
+
+#fixedbordure_gauche
+{
+	position : fixed;
+	top: -10px;
+	left : 100px;
+}
+
+#fixedbordure_droite
+{
+	position : fixed;
+	top: -10px;
+	right : 100px;
+}
+}

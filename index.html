@@ -3,25 +3,38 @@
 <head>
 	<title>PortFolio Prob Bastien</title>
 	<meta charset="utf-8">
+
 	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="stylesheet" type="text/css" href="style_coin.css"/>
+	<link rel="stylesheet" type="text/css" href="style_Small.css"/>
+	<link rel="stylesheet" type="text/css" href="style_Medium.css"/>
+	<link rel="stylesheet" type="text/css" href="style_Mobile.css"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script type="text/javascript" src="helpers.js"></script>
 </head>
-<body>
+<body onload="fadeTextOnStart()">
 	
 	<img src="image/bordure_gauche.png" id="fixedbordure_gauche">
 	<img src="image/bordure_droite.png" id="fixedbordure_droite">
 
 	<div id="fixed">
 		<img src="image/logo.png"> <br/>
-		<a href="#Presentation"> Présentation </a> <br/>
-		<a href="#Competences"> Compétences </a> <br/>
-		<a href="#ExperiencePro"> Expériences Pro </a> <br/>
-		<a href="#Projets"> Projets </a> <br/>
-		<a href="#Bulletins"> Bulletins </a><br/> <br/> <br/> <br/><br/> <br/> <br/> <br/> <br/>
+		<div onmouseover="animateAnchor(this)" onmouseout="resetAnchor(this)"> <a href="#Presentation"> Présentation </a> </div>
+		<div onmouseover="animateAnchor(this)" onmouseout="resetAnchor(this)"> <a href="#Competences"> Compétences </a> </div>
+		<div onmouseover="animateAnchor(this)" onmouseout="resetAnchor(this)"> <a href="#ExperiencePro"> Expériences Pro </a> </div>
+		<div onmouseover="animateAnchor(this)" onmouseout="resetAnchor(this)"> <a href="#Projets"> Projets </a> </div> <br/> <br/> <br/> <br/><br/> <br/> <br/> <br/> <br/>
 	</div>
 
 	<div id="fixed3">
 		<p>Plutôt Old School ? <br/> Téléchargez le CV en <br/> format PDF :</p>
 		<p><a href="CV_BastienProb.pdf">CV Manuscrit</a>.</p>
+	</div>
+
+	<div id="fixed5">
+		<span style="font-size: 2.4em" id="txtCount">0   </span>
+		<img src="image/coin.png" width="30" height="30">
 	</div>
 
 	<div id="fixed2">
@@ -33,13 +46,13 @@
 	</div>
 
 	<div id="fixed4">
-		<a href="index.html" target="_blank"> <img src="image/logo_fr.png"> </a> <br/> <br/>
-		<a href="engPage.html" target="_blank"> <img src="image/logo_eng.png"> </a> 
+		<div onmouseover="animateFlag(this)" onmouseout="resetFlag(this)"> <a href="index.html" target="_blank"> <img src="image/logo_fr.png"> </a> </div> <br/> 
+		<div onmouseover="animateFlag(this)" onmouseout="resetFlag(this)"> <a href="engPage.html" target="_blank"> <img src="image/logo_eng.png"> </a> </div>
 	</div>
 	
 	<div id="background_centre">
 
-		<div id="cadre_pres">
+		<div id="cadre_pres" class="fade_intro" style="color:black;">
 			<img src ="image/photo_moi2.png" class="maphoto" alt="Prob Bastien"/> 
 			<p class="titre_pres" id="Presentation">Bastien Prob</p> <br/>
 			<p class="titre_pres">Game Designer et Developpeur</p>
@@ -55,56 +68,65 @@
 		<img src="image/bordure2_basgauche.png" id="bordure2_basgauche">
 		<img src="image/bordure2_basdroite.png" id="bordure2_basdroite">
 
-		<div id="cadre_pres2">
+		<div id="cadre_pres2" onmouseover="startShake(this)" onmouseout="resetShake(this)">
+		<div class="fade_intro" style="color:black;" onmouseover="changePresentationWhenHover(this)" onmouseout="resetPresentation(this)">
 			<p class="titre_pres2"> Présentation </p>
+			<img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)">
 			<p>
-				Titulaire d’un diplôme de <strong>Bachelor de Développeur de Jeux Vidéo</strong>, j’étudie encore actuellement au sein de l’école Ludus Académie afin d’obtenir mon Master. <br/> Passionné de conception de jeux depuis mes 6 ans, que ce soient des jeux de société ou de jeux en plein air, je me suis vite orienté dans la création de jeux vidéo durant mes années de collège. Ainsi, c’est donc naturellement que j’en ai fait ma vocation. Le Serious Game m’attire tout particulièrement pour sa dimension sérieuse et le fait qu’elle puisse apporter des avantages qui vont au-delà du simple amusement.
+				<span class="toFade">Titulaire d’un diplôme </span><span class="toEnhance">bac +5 "Chef de projets informatiques et multimédia"</span><span class="toFade">, je suis </span><span class="toEnhance">développeur informatique</span><span class="toFade">, spécialisé dans le </span><span class="toEnhance">développement de jeux vidéo</span>. <br/> 
+				<span class="toFade">Passionné de conception de jeux depuis mes 6 ans, je me suis vite orienté dans la création de jeux vidéo durant mes années de collège. Ainsi, c’est donc naturellement que j’en ai fait ma vocation. Avec le temps, mon domaine d'expertise s'est élargi au </span><span class="toEnhance">web, au mobile, à la BDD et à l'applicationnel.</span> <br/> 
+				<span class="toFade">Le </span><span class="toEnhance">Serious Game</span><span class="toFade"> m’attire tout particulièrement pour sa dimension sérieuse et le fait qu’elle puisse apporter des avantages qui vont au-delà du simple amusement.</span>
 			</p>
+		</div>
 		</div>
 
 		<img src="image/flag.png" id="flag1">
 		<img src="image/flag.png" id="flag2">
 
-		<div class="colonne" id="grand_font">
-			<p id="Competences">
-				<u>Hardskills</u>
-			</p>
-			<p>
-				<u>Softskills</u>
-			</p>
-			<p>
-				<u>Hobbies</u>
-			</p>
-		</div>
 
-		<br/>
-		<div class="colonne" id="padding">
-			<p class="font_spe">
+		<br id="Competences"/>
+		<div class="colonne fade_intro" id="padding" style="color:black;">
+			<div class="font_spe spe_border" id="skills01" onmouseover="fadeSkills(2), fadeSkills(3), unFadeSkills(1), startShake(this)" onmouseout="unFadeSkills(1), unFadeSkills(2), unFadeSkills(3), resetShake(this)">
+				<img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)">
+				<div class="grand_font">
+					<u>Hardskills</u>
+				</div> <br/>
 				- <strong> Moteurs de Jeux </strong>: Unity et UE4<br/>
 				- <strong> Langages de Prédilection </strong>: C#, C++, Javascript, Blueprint <br/>
-				- <strong> Langages appris </strong>: HTML, CSS, Java, Php, SQL, C <br/> 
-				- Compréhension des corps de métiers du jeu vidéo <br/>
-				- Maîtrise de gestion de projet <br/>
-				- Ecriture de documents de design <br/>
+				- <strong> Langages appris </strong>: HTML, CSS, Java, Php, SQL, C, Python <br/> 
+				- <strong> Environnements </strong>: .NET, React, PhPMyAdmin, Postman, Xamarin <br/> 
+				- Compréhension des corps de métiers du JV / dev <br/>
+				- Maîtrise de gestion de projet (GitHub, Trello, JIRA, SCRUM...)<br/>
+				- Ecriture de documents de design / code <br/>
 				- Level Design, UI / UX, VR, Prototypage <br/>
 				- <strong> English </strong>, of course
-			</p>
-			<p class="font_spe">
-				- <strong> Collaboratif et Flexible </strong><br/>
-				- <strong> Autonome et Organisé </strong><br/>
-				- <strong> Proactif et Enthousiaste</strong><br/>
-				- <strong> Créatif et Curieux </strong><br/>
+			</div>
+			<div class="font_spe spe_border" id="skills02" onmouseover="fadeSkills(1), fadeSkills(3), unFadeSkills(2), startShake(this)" onmouseout="unFadeSkills(1), unFadeSkills(2), unFadeSkills(3), resetShake(this)">
+				<div class="grand_font">
+					<u>Softskills</u>
+				</div> <br/>
+				- <strong> Collaboratif</strong><br/>
+				- <strong> Autonome </strong><br/>
+				- <strong> Proactif</strong><br/>
+				<img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)">
+				- <strong> Créatif</strong><br/>
 				- <strong> Analytique </strong><br/>
+				- <strong> Organisé </strong><br/>
 				- <strong> Adaptatif </strong>
-			</p>
-			<p class="font_spe">
+			</div>
+			<div class="font_spe spe_border" id="skills03" onmouseover="fadeSkills(1), fadeSkills(2), unFadeSkills(3), startShake(this)" onmouseout="unFadeSkills(1), unFadeSkills(2), unFadeSkills(3), resetShake(this)">
+				<div class="grand_font">
+					<u>Hobbies</u>
+				</div> <br/>
 				- <strong> Ecriture </strong> (Roman, Poésies, Fanfictions ...) <br/>
 				- <strong> Musique </strong> (Piano, Ukulélé, Flûte Irlandaise ...) <br/>
 				- <strong> Sport </strong> (Musculation et Natation) <br/>
 				- <strong> Culture Générale et Blindtests </strong> <br/>
 				- <strong> Lecture </strong> (beaucoup de fantasy) <br/>
+				- <strong> Peinture </strong> (commencé récemment) <br/>
 				- <strong> Ancien tireur à la carabine </strong> (8 ans de tir)
-			</p>
+				<img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)">
+			</div>
 		</div>
 		<br/><br/>
 
@@ -112,12 +134,34 @@
 		<img src="image/flag.png" id="flag4">
 		<p class="titre" id="ExperiencePro">
 			Expériences Professionnelles
-		</p> <br/> <br/> <br/> <br/> <br/> <br/>
+		</p> <br/> <br/> 
 
 
 
 		<div id="experience_pro">
 
+			<div class="colonne deplace_to_left_50">
+			<div class="spe_border width_pro" onmouseover="changeExpProWhenHover(this), startShake(this)" onmouseout="resetExpPro(this), resetShake(this)">
+			<p class="titre_pro"> Serious Game Dev – 2022
+			<br/> 
+			<tabble> 
+				<tr>
+					<td><img src="image/logo_duree.png"></td>
+					<td>2 mois</td>
+				</tr> <br/>
+				<img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)">
+				<tr>
+					<td><img src="image/logo_lieu.png"></td>
+					<td>Mairie, Kingersheim</td>
+				</tr> 
+			</tabble>
+			</p>  
+			<ul>- Conception d'un Serious Game visant à apprendre les règles à vélo pour les -12 ans </ul> 
+			<ul>- Application stricte de la méthodologie SCRUM </ul>
+			<ul>- Design et développement Unity, C# </ul><br/>
+			</div>
+
+			<div class="spe_border width_pro" onmouseover="changeExpProWhenHover(this), startShake(this)" onmouseout="resetExpPro(this), resetShake(this)">
 			<p class="titre_pro"> Game Designer d’Escape Game – 2021
 			<br/> 
 			<tabble> 
@@ -131,14 +175,19 @@
 				</tr> 
 			</tabble>
 			</p>  
-
 			<ul>- Conception de scénarii et d’énigmes pour Escape Game </ul> 
 			<ul>- Production de documents de design </ul>
 			<ul>- Mise en place de playtests, explications aux joueurs et analyses des comportements </ul>
 			<ul>- Dialogues avec les autres membres concernant les idées créatives </ul> <br/>
+			<img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)">
+			</div>
+			</div>
 
-			<p class="titre_pro"> Prestataire de service pour l’élaboration d’un Advergame – 2020
+			<div class="colonne deplace_to_left_50">
+			<div class="spe_border width_pro" onmouseover="changeExpProWhenHover(this), startShake(this)" onmouseout="resetExpPro(this), resetShake(this)">
+			<p class="titre_pro"> Game Design / Dev Advergame – 2020
 			<br/> 
+			<img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)">
 			<tabble> 
 				<tr>
 					<td><img src="image/logo_duree.png"></td>
@@ -150,12 +199,13 @@
 				</tr> 
 			</tabble>
 			</p>
-
 			<ul>- Production d’un Advergame mobile sur Unity : programmation et conception </ul>
 			<ul>- Mode projet agile : SCRUM </ul>
 			<ul>- Chargé de communication avec les différents acteurs du projet et les clients </ul> <br/>
+			</div>
 
-			<p class="titre_pro"> Prestataire de service pour l’élaboration d’un jeu VR : CAVE-DOME – 2019/2020
+			<div class="spe_border width_pro" onmouseover="changeExpProWhenHover(this), startShake(this)" onmouseout="resetExpPro(this), resetShake(this)">
+			<p class="titre_pro"> Game Designer / Dev VR Game : CAVE-DOME – 2019/2020
 			<br/> 
 			<tabble> 
 				<tr>
@@ -165,6 +215,7 @@
 				<tr>
 					<td><img src="image/logo_lieu.png"></td>
 					<td>Pixel Museum, Strasbourg</td>
+					<img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)">
 				</tr> 
 			</tabble>
 			</p>
@@ -173,7 +224,11 @@
 			<ul>- Programmation sur Unreal Engine en blueprint </ul>
 			<ul>- Tâches de Lead Level Designer, Lead Quest Designer et Lead UX Designer </ul>
 			<ul>- Mode projet agile : Extreme Programming </ul> <br/>
+			</div>
+			</div>
 
+			<div class="colonne deplace_to_left_50">
+			<div class="spe_border width_pro" onmouseover="changeExpProWhenHover(this), startShake(this)" onmouseout="resetExpPro(this), resetShake(this)">
 			<p class="titre_pro">Préparateur de commandes en logistique – 2018
 			<br/>
 			<tabble> 
@@ -189,9 +244,12 @@
 			</p>
 
 	    	<ul>- Préparation et réparation de vélos </ul>
-	    	<ul>- Stockage de colis </ul>
+	    	<img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)">
+	    	<ul>- Stockage de colis (en mode Tétris)</ul>
   			<ul>- Transports de colis </ul> <br/>
-		</div>
+  			</div>
+  			</div>
+		</div> <br/><br/><br/><br/><br/><br/><br/>
 
 		<div class="colonne_proj">
 		<div class="box_gauche">
@@ -206,7 +264,7 @@
 			</p>
 		</div> 
 		<div >
-			<img src="image/tampon/UE4.png"> <br/>
+			<div onmouseover="startShake(this)" onmouseout="resetShake(this)"> <img src="image/tampon/UE4.png"> <img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)"> </div>
 			<img src="image/tampon/Blueprint.png"> <br/>
 			<img src="image/tampon/Technologie.png"> <br/>
 			<img src="image/tampon/VR.png"> <br/>
@@ -220,7 +278,7 @@
 			<img src="image/tampon/Unity.png"> <br/>
 			<img src="image/tampon/CS.png"> <br/>
 			<img src="image/tampon/UI.png"> <br/>
-			<img src="image/tampon/Mobile.png"> <br/>
+			<div onmouseover="startShake(this)" onmouseout="resetShake(this)"> <img src="image/tampon/Mobile.png"> <img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)"> </div>
 			<img src="image/tampon/DocGD.png"> <br/>
 			<img src="image/tampon/Relationnel.png">
 		</div>
@@ -249,7 +307,7 @@
 		</div> 
 		<div>
 			<img src="image/tampon/NarrativeDesign.png"> <br/>
-			<img src="image/tampon/DocGD.png"> <br/>
+			<div onmouseover="startShake(this)" onmouseout="resetShake(this)"> <img src="image/tampon/DocGD.png"> <img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)"> </div>
 			<img src="image/tampon/Relationnel.png">
 		</div>
 		</div>
@@ -257,9 +315,9 @@
 		<div class="colonne_proj">
 		<div>
 			<img src="image/tampon/NarrativeDesign.png"> <br/>
-			<img src="image/tampon/Prototype.png"> <br/>
+			<div onmouseover="startShake(this)" onmouseout="resetShake(this)"> <img src="image/tampon/Prototype.png"> <img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)"> </div>
 			<img src="image/tampon/GestionProjet.png"> <br/>
-			<img src="image/tampon/DocGD.png"> <br/>
+			<div onmouseover="startShake(this)" onmouseout="resetShake(this)"> <img src="image/tampon/DocGD.png"> <img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)"> </div>
 			<img src="image/tampon/Relationnel.png">
 		</div>
 		<div class="box_droite">
@@ -271,6 +329,28 @@
 				La Gloire des Vikings est un scénario d'Escape Game à faire à la maison. J'ai dû m'occuper entièrement du projet, depuis le pitch de la thématique, jusqu'à l'organisation des playtests, en passant par la construction des prototypes en carton et au design des énigmes/histoires. Conçu durant mon stage de 6 mois chez Locks Adventure : https://locksadventure.fr/nos-missions
 			</p>
 		</div> 
+		</div>
+
+		<div class="colonne_proj">
+		<div class="box_gauche">
+			<p class="titre_box">
+				KingVelo
+			</p>
+			<a href="image/kv1_max.png" target="_blank"><img src="image/kv1.png"></a>
+			<a href="image/kv2_max.png" target="_blank"><img src="image/kv2.png"></a>
+			<a href="https://gyazo.com/a89f9f00d29a0cb887d16b96103248c2"><img src="https://gyazo.com/a89f9f00d29a0cb887d16b96103248c2.gif" alt="Image from Gyazo" width="190"/></a>
+			<p>
+				King Vélo est un Serious Game visant à apprendre aux enfants les règles de bon usage à vélo. Je me suis occupé du projet, tout seul, de A à Z, en communiquant à chaque fois mon avancé à mon maître de stage selon une méthologie SCRUM très stricte. Le jeu est disponible <a href="https://drmole1.itch.io/kingvelo"> ici </a>.
+			</p>
+		</div> 
+		<div >
+			<img src="image/tampon/Unity.png"> <br/>
+			<img src="image/tampon/CS.png"> <br/>
+			<div onmouseover="startShake(this)" onmouseout="resetShake(this)"> <img src="image/tampon/SeriousGame.png"> <img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)"> </div>
+			<img src="image/tampon/Relationnel.png"> <br/>
+			<img src="image/tampon/GestionProjet.png"> <br/>
+			<img src="image/tampon/DocGD.png">
+		</div>
 		</div>
 
 		<img src="image/flag.png" id="flag5">
@@ -298,9 +378,87 @@
 			<img src="image/tampon/Unity.png"> <br/>
 			<img src="image/tampon/CS.png"> <br/>
 			<img src="image/tampon/LevelDesign.png"> <br/>
-			<img src="image/tampon/SeriousGame.png"> <br/>
+			<div onmouseover="startShake(this)" onmouseout="resetShake(this)"> <img src="image/tampon/SeriousGame.png"> <img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)"> </div>
 			<img src="image/tampon/DocGD.png"> <br/>
 			<img src="image/tampon/GestionProjet.png">
+		</div>
+		</div>
+
+		<div class="colonne_proj">
+		<div>
+			<img src="image/tampon/CS.png"> <br/>
+			<img src="image/tampon/Mobile.png"> <br/>
+			<img src="image/tampon/ProjetPerso.png">
+		</div>
+		<div class="box_droite">
+			<p class="titre_box">
+				Amsterdam Trip
+			</p>
+			<a href="image/at1_max.png" target="_blank"><img src="image/at1.png"></a>
+			<a href="image/at2_max.png" target="_blank"><img src="image/at2.png"></a>
+			<a href="image/at3_max.png" target="_blank"><img src="image/at3.png"></a>
+			<p>
+				Il s'agit d'une application mobile m'ayant permis d'organiser mon voyage à Amsterdam et de stocker mes photos. Développée sur Xamarin, il s'agissait de manipuler le CRUD avec une base de données sqlite, le tout en C#. Je pouvais donc créer une activité que je souhaitais faire, la valider comme une to-do list, et y stocker les photos en rapport. J'ai pu apprendre la manipulation de Xamarin de manière 100% autodidacte pour répondre à mes besoins !
+			</p>
+		</div> 
+		</div>	
+
+		<div class="colonne_proj">
+		<div class="box_gauche">
+			<p class="titre_box">
+				HexaGo
+			</p>
+			<a href="image/hexa1_max.png" target="_blank"><img src="image/hexa1.png"></a>
+			<a href="image/hexa2_max.png" target="_blank"><img src="image/hexa2.png"></a>
+			<a href="image/hexa3_max.png" target="_blank"><img src="image/hexa3.png"></a>
+			<p>
+				Il s'agit d'un Rogue Like conçu pour console XBox, jouable à la manette uniquement. En plus d'avoir conçu le game design, les graphismes et grandement participé au dev, j'ai été chef de projet en supervisant deux autres devs. Le jeu est téléchargeable <a href="https://cedric-robotman.itch.io/hexago"> ici </a>.
+			</p>
+		</div>
+		<div>
+			<img src="image/tampon/Unity.png"> <br/>
+			<div onmouseover="startShake(this)" onmouseout="resetShake(this)"> <img src="image/tampon/CS.png"> <img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)"> </div>
+			<img src="image/tampon/Technologie.png"> <br/>
+			<img src="image/tampon/LevelDesign.png"> <br/>
+			<img src="image/tampon/Relationnel.png"> <br/>
+			<img src="image/tampon/GestionProjet.png">
+		</div>
+		</div>
+
+		<div class="colonne_proj">
+		<div>
+			<img src="image/tampon/Javascript.png">
+		</div>
+		<div class="box_droite">
+			<p class="titre_box">
+				Rando Addict
+			</p>
+			<a href="image/rando1_max.png" target="_blank"><img src="image/rando1.png"></a>
+			<a href="image/rando2_max.png" target="_blank"><img src="image/rando2.png"></a>
+			<a href="image/rando3_max.png" target="_blank"><img src="image/rando3.png"></a>
+			<p>
+				Rando Addict est un site web dynamique développé avec HTML, CSS, Javascript, PhP et SQL pour gérer des randonnées. Liées à une base de données, les fonctionnalités du site touchent au CRUD. Chaque utilisateur peut créer un compte, participer à une randonnée, demander à être guide, créer un programme etc ... Dans le cadre d'une thèse de master, j'ai conçu ce site en respectant les processus de GreenCode. Le projet est disponible <a href="https://github.com/DrMole1/RandoAddicts"> ici </a>.
+			</p>
+		</div> 
+		</div>	
+
+		<div class="colonne_proj">
+		<div class="box_gauche">
+			<p class="titre_box">
+				StarScale
+			</p>
+			<a href="image/ss1_max.png" target="_blank"><img src="image/ss1.png"></a>
+			<a href="image/ss2_max.png" target="_blank"><img src="image/ss2.png"></a>
+			<a href="https://gyazo.com/6f43b1d65dd51cc1d49fce7f49c0f52c"><img src="https://gyazo.com/6f43b1d65dd51cc1d49fce7f49c0f52c.gif" alt="Image from Gyazo" width="190"/></a>
+			<p>
+				Il s'agit d'un Serious Game pour apprendre très brièvement les concepts fondamentaux de l'astrophysique, et plus précisément, la paramétrisation cosmique. Fait sur Unity en utilisant le C#, puis présenté à un jury pour l'optention de mon master. Le jeu est disponible <a href="https://drmole1.itch.io/starscale"> ici </a>.
+			</p>
+		</div>
+		<div>
+			<img src="image/tampon/Unity.png"> <br/>
+			<div onmouseover="startShake(this)" onmouseout="resetShake(this)"> <img src="image/tampon/CS.png"> <img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)"> </div>
+			<img src="image/tampon/Prototype.png"> <br/>
+			<img src="image/tampon/SeriousGame.png">
 		</div>
 		</div>
 
@@ -316,7 +474,7 @@
 			<a href="image/lab2_max.png" target="_blank"><img src="image/lab2.png"></a>
 			<a href="https://gyazo.com/15337078bda2dc7268086f644c05cda6"><img src="https://i.gyazo.com/15337078bda2dc7268086f644c05cda6.gif" alt="Image from Gyazo" width="190"/></a>
 			<p>
-				Lab0 est un jeu développé intégralement sur Phaser, en Javascript. Il s'agissait de produire un jeu d'arcade fun rendant hommage à la série Arcane. Le principal enjeu fut de vite comprendre le framework pour le maîtriser et produire un jeu original. Le projet est disponible <a href="https://drmole1.github.io/Lab0/"> ici </a>.
+				Lab0 est un jeu développé intégralement sur Phaser, en Javascript. Il s'agissait de produire un jeu d'arcade fun rendant hommage à la série Arcane. Le principal enjeu fut de vite comprendre le framework pour le maîtriser et produire un jeu original. Le jeu est disponible <a href="https://drmole1.github.io/Lab0/"> ici </a>.
 			</p>
 		</div> 
 		</div>	
@@ -337,7 +495,7 @@
 			<img src="image/tampon/Unity.png"> <br/>
 			<img src="image/tampon/CS.png"> <br/>
 			<img src="image/tampon/LevelDesign.png"> <br/>
-			<img src="image/tampon/UI.png"> <br/>
+			<div onmouseover="startShake(this)" onmouseout="resetShake(this)"> <img src="image/tampon/UI.png"> <img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)"> </div>
 			<img src="image/tampon/Mobile.png"> <br/>
 			<img src="image/tampon/DocGD.png">
 		</div>
@@ -348,7 +506,7 @@
 			<img src="image/tampon/Unity.png"> <br/>
 			<img src="image/tampon/CS.png"> <br/>
 			<img src="image/tampon/Prototype.png"> <br/>
-			<img src="image/tampon/GameJam.png"> <br/>
+			<div onmouseover="startShake(this)" onmouseout="resetShake(this)"> <img src="image/tampon/GameJam.png"> <img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)"> </div>
 			<img src="image/tampon/ProjetPerso.png">
 		</div>
 		<div class="box_droite">
@@ -380,7 +538,7 @@
 			<img src="image/tampon/Unity.png"> <br/>
 			<img src="image/tampon/CS.png"> <br/>
 			<img src="image/tampon/UI.png"> <br/>
-			<img src="image/tampon/Switch.png"> <br/>
+			<div onmouseover="startShake(this)" onmouseout="resetShake(this)"> <img src="image/tampon/Switch.png"> <img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)"> </div>
 			<img src="image/tampon/GestionProjet.png">
 		</div>
 		</div>
@@ -419,7 +577,7 @@
 			</p>
 		</div> 
 		<div>
-			<img src="image/tampon/Unity.png"> <br/>
+			<div onmouseover="startShake(this)" onmouseout="resetShake(this)"> <img src="image/tampon/Unity.png"> <img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)"> </div>
 			<img src="image/tampon/CS.png"> <br/>
 			<img src="image/tampon/UI.png"> <br/>
 			<img src="image/tampon/SeriousGame.png">
@@ -470,7 +628,7 @@
 		<div class="colonne_proj">
 		<div>
 			<img src="image/tampon/Unity.png"> <br/>
-			<img src="image/tampon/CS.png"> <br/>
+			<div onmouseover="startShake(this)" onmouseout="resetShake(this)"> <img src="image/tampon/CS.png"> <img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)"> </div>
 			<img src="image/tampon/LevelDesign.png"> <br/>
 			<img src="image/tampon/SeriousGame.png"> <br/>
 			<img src="image/tampon/GestionProjet.png">
@@ -501,7 +659,7 @@
 			</p>
 		</div> 
 		<div>
-			<img src="image/tampon/Unity.png"><br/> 
+			<div onmouseover="startShake(this)" onmouseout="resetShake(this)"> <img src="image/tampon/Unity.png"> <img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)"> </div> 
 			<img src="image/tampon/CS.png"><br/> 
 			<img src="image/tampon/SeriousGame.png">
 		</div>
@@ -511,7 +669,7 @@
 		<div>
 			<img src="image/tampon/Unity.png"> <br/>
 			<img src="image/tampon/CS.png"> <br/>
-			<img src="image/tampon/SeriousGame.png"> <br/>
+			<div onmouseover="startShake(this)" onmouseout="resetShake(this)"> <img src="image/tampon/SeriousGame.png"> <img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)"> </div>
 			<img src="image/tampon/ProjetPerso.png"> 
 		</div>
 		<div class="box_droite">
@@ -542,7 +700,7 @@
 		<div>
 			<img src="image/tampon/UE4.png"> <br/>
 			<img src="image/tampon/Blueprint.png"> <br/>
-			<img src="image/tampon/VR.png"> <br/>
+			<div onmouseover="startShake(this)" onmouseout="resetShake(this)"> <img src="image/tampon/VR.png"> <img src="image/coin.png" class="coin" id="coinPresentation" onmouseover="mouseOnCoin(this)" onmouseout="mouseOutCoin(this)" onclick="clickOnCoin(this)"> </div>
 			<img src="image/tampon/GestionProjet.png"> <br/>
 			<img src="image/tampon/DocGD.png">
 		</div>
@@ -626,32 +784,6 @@
 			<img src="image/tampon/ProjetPerso.png">
 		</div>
 		</div> <br/> <br/> <br/><br/> <br/>
-
-		<div id="Bulletins">
-			<p class="titre">Bulletins</p>
-
-			<p class="soustitre">
-				Bulletins de Master 2 (cliquez pour agrandir)
-			</p> <br/> <br/>
-		</div>
-
-		<img src="image/flag.png" id="flag7">
-		<img src="image/flag.png" id="flag8">
-
-		<div class="colonne">
-			<p>Trimestre 1</p>
-			<p>Trimestre 2</p>
-			<p>Trimestre 3</p>
-		</div>
-
-		<div class="colonne">
-			<p><a href="BulletinT1.pdf"><img src="image/Bulletin1.png"></a>.</p>
-			<p><img src="image/BulletinBlank.png"></p>
-			<p><img src="image/BulletinBlank.png"></p>
-		</div>
-
-
-
 
 	</div>
 </body>
