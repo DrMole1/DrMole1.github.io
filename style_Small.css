@@ -6,7 +6,7 @@
 	position : relative;
 	left : 200px;
 	top : -10px;
-	height : 13500px;
+	height : 10500px;
 	width : 920px;
 }
 
@@ -168,7 +168,7 @@
 {
 	display : flex;
 	position : absolute;
-	top : 1220px;
+	top : 1170px;
 	left : 220px;
 }
 
@@ -176,7 +176,7 @@
 {
 	display : flex;
 	position : absolute;
-	top : 1220px;
+	top : 1170px;
 	left : 750px;
 }
 
@@ -184,32 +184,32 @@
 {
 	display : flex;
 	position : absolute;
-	top : 4300px;
-	left : 220px;
+	top : 2550px;
+	left : 200px;
 }
 
 #flag6
 {
 	display : flex;
 	position : absolute;
-	top : 4300px;
-	left : 750px;
+	top : 2550px;
+	left : 770px;
 }
 
 #flag7
 {
 	display : flex;
 	position : absolute;
-	top : 11550px;
-	left : 300px;
+	top : 3040px;
+	left : 240px;
 }
 
 #flag8
 {
 	display : flex;
 	position : absolute;
-	top : 11550px;
-	left : 670px;
+	top : 3040px;
+	left :730px;
 }
 
 .font_spe

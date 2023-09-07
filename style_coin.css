@@ -26,6 +26,7 @@
 .mouseOnCoin{
   -webkit-animation: toMouseOnCoin 0.1s both ease-in;
   -webkit-animation-fill-mode: forwards;
+  cursor: grabbing;
 }
 
 @-webkit-keyframes toMouseOnCoin {
